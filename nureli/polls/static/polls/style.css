@@ -1,0 +1,70 @@
+
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+        :root{--p:#e74c3c;--s:#f39c12;--a:#2ecc71;--d:#2c3e50;--l:#ecf0f1;--t:#333;--sh:0 4px 6px rgba(0,0,0,0.1)}
+        body{background:#f9f9f9;color:var(--t);line-height:1.6}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        header{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:1rem 0;box-shadow:var(--sh)}
+        .header-content{display:flex;justify-content:space-between;align-items:center}
+        .logo{display:flex;align-items:center;gap:10px}
+        .logo i{font-size:2rem}
+        .logo h1{font-size:1.8rem;font-weight:700}
+        nav ul{display:flex;list-style:none;gap:1.5rem}
+        nav a{color:#fff;text-decoration:none;font-weight:500;transition:all .3s}
+        nav a:hover{color:var(--l);text-decoration:underline}
+        .hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');background-size:cover;background-position:center;color:#fff;text-align:center;padding:5rem 1rem;margin-bottom:3rem}
+        .hero h2{font-size:2.5rem;margin-bottom:1rem}
+        .hero p{font-size:1.2rem;max-width:700px;margin:0 auto 2rem}
+        .search-box{max-width:600px;margin:0 auto;display:flex}
+        .search-box input{flex:1;padding:12px 15px;border:none;border-radius:4px 0 0 4px;font-size:1rem}
+        .search-box button{background:var(--p);color:#fff;border:none;padding:0 20px;border-radius:0 4px 4px 0;cursor:pointer;transition:background .3s}
+        .search-box button:hover{background:#c0392b}
+        .section-title{text-align:center;margin-bottom:2rem;position:relative}
+        .section-title h2{font-size:2rem;color:var(--d);display:inline-block;padding-bottom:10px}
+        .section-title h2::after{content:'';position:absolute;width:80px;height:3px;background:var(--p);bottom:0;left:50%;transform:translateX(-50%)}
+        .categories{padding:3rem 0}
+        .categories-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.5rem}
+        .category-card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:var(--sh);transition:transform .3s}
+        .category-card:hover{transform:translateY(-10px)}
+        .category-img{height:160px;background-size:cover;background-position:center}
+        .category-content{padding:1.5rem;text-align:center}
+        .category-content h3{font-size:1.3rem;margin-bottom:.5rem;color:var(--d)}
+        .category-content p{color:#666;font-size:.9rem}
+        .recipes{padding:3rem 0;background:var(--l)}
+        .recipes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2rem}
+        .recipe-card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:var(--sh);transition:transform .3s}
+        .recipe-card:hover{transform:translateY(-5px)}
+        .recipe-img{height:200px;background-size:cover;background-position:center}
+        .recipe-content{padding:1.5rem}
+        .recipe-content h3{font-size:1.3rem;margin-bottom:.5rem;color:var(--d)}
+        .recipe-meta{display:flex;justify-content:space-between;margin-bottom:1rem;font-size:.9rem;color:#666}
+        .recipe-details{display:flex;justify-content:space-between;margin-bottom:1rem;font-size:.9rem}
+        .recipe-type{display:inline-block;padding:4px 8px;border-radius:4px;font-size:.8rem;font-weight:600}
+        .type-etli{background:#ffebee;color:#d32f2f}
+        .type-vegan{background:#e8f5e9;color:#388e3c}
+        .type-toyuq{background:#fff3e0;color:#f57c00}
+        .type-baliq{background:#e3f2fd;color:#1976d2}
+        .recipe-price{font-weight:600;color:var(--d)}
+        .recipe-content p{margin-bottom:1rem;color:#555}
+        .recipe-btn{display:inline-block;background:var(--p);color:#fff;padding:8px 15px;border-radius:4px;text-decoration:none;font-weight:500;transition:background .3s}
+        .recipe-btn:hover{background:#c0392b}
+        .newsletter{padding:4rem 0;background:linear-gradient(135deg,var(--d),#34495e);color:#fff;text-align:center}
+        .newsletter h2{font-size:2rem;margin-bottom:1rem}
+        .newsletter p{max-width:600px;margin:0 auto 2rem;font-size:1.1rem}
+        .newsletter-form{max-width:500px;margin:0 auto;display:flex}
+        .newsletter-form input{flex:1;padding:12px 15px;border:none;border-radius:4px 0 0 4px;font-size:1rem}
+        .newsletter-form button{background:var(--a);color:#fff;border:none;padding:0 25px;border-radius:0 4px 4px 0;cursor:pointer;font-weight:600;transition:background .3s}
+        .newsletter-form button:hover{background:#27ae60}
+        footer{background:var(--d);color:#fff;padding:3rem 0 1.5rem}
+        .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-bottom:2rem}
+        .footer-column h3{font-size:1.2rem;margin-bottom:1.2rem;position:relative;padding-bottom:10px}
+        .footer-column h3::after{content:'';position:absolute;width:40px;height:2px;background:var(--p);bottom:0;left:0}
+        .footer-links{list-style:none}
+        .footer-links li{margin-bottom:.8rem}
+        .footer-links a{color:#bbb;text-decoration:none;transition:color .3s}
+        .footer-links a:hover{color:#fff}
+        .social-icons{display:flex;gap:1rem;margin-top:1rem}
+        .social-icons a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(255,255,255,0.1);border-radius:50%;color:#fff;transition:background .3s}
+        .social-icons a:hover{background:var(--p)}
+        .copyright{text-align:center;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1);font-size:.9rem;color:#bbb}
+        @media (max-width:768px){.header-content{flex-direction:column;gap:1rem}.nav-links{gap:1rem}.hero h2{font-size:2rem}.search-box,.newsletter-form{flex-direction:column}.search-box input,.newsletter-form input{border-radius:4px;margin-bottom:10px}.search-box button,.newsletter-form button{border-radius:4px;padding:12px}.recipe-details{flex-direction:column;gap:.5rem}}
+    
